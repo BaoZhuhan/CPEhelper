@@ -1,7 +1,6 @@
 function calStanddeviation(){
     var inputVal = document.getElementById("dataInput").value;
 
-    // 检查输入是否为以空格分割的数字
     var regex = /^(\d+(\.\d+)?)( \d+(\.\d+)?)*$/;
     if (!regex.test(inputVal)) {
         alert("请输入以空格分割的数字！");
