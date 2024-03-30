@@ -1,5 +1,5 @@
-function calStanddeviation(){
-    var inputVal = document.getElementById("dataInput").value;
+function calAvgStdDev(){
+    var inputVal = document.getElementById("InputavgStdDev").value;
 
     var regex = /^(\d+(\.\d+)?)( \d+(\.\d+)?)*$/;
     if (!regex.test(inputVal)) {
@@ -24,7 +24,7 @@ function calStanddeviation(){
     stdDeviation = Math.sqrt(stdDeviation);
 
     stdDeviation = stdDeviation.toFixed(maxDecimalLength);
-    
-    document.getElementById("avg").innerHTML = avg;
-    document.getElementById("stdDeviation").innerHTML = stdDeviation;
+
+    document.getElementById("outputAvg").innerHTML = avg;
+    document.getElementById("outputStdDev").innerHTML = stdDeviation;
 }

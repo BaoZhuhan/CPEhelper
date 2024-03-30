@@ -1,72 +1,54 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CPEhelper</title>
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+  <meta charset="utf-8">
+  <meta name="author" content="Bao Zhuhan">
+  <meta name="description"
+    content="The CPEhelper is a useful tool to help you with your college physicys experiment.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="styles/index.css">
+  <script src="scripts/index.js" defer></script>
+
 </head>
 
 <body>
-  <script src="js/cal.js"></script>
-  <table>
-    <tbody>
-      <tr>
-        <td>
-          <h1>CPEhelper</h1>
-        </td>
-        <td></td>
-        <td>
-          <p id="warn">提示:本站仍然处于开发状态</p>
-          <p id="invite">访问本网站的<a href="https://github.com/BaoZhuhan/CPEhelper">Github的项目地址</a></p>
-        </td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <td>
-          <h3>>计算平均值和标准偏差</h3>
-        </td>
-        <td>&nbsp;</td>
-        <td>
-          <div id="inputArea">
+  <header>
+    <h1>CPEhelper</h1>
+  </header>
+  <main>
+    <ul id="functionList">
+      <li id="avgStdDev">计算平均值和标准偏差</li>
+    </ul>
 
-            <p>输入数据，使用空格分隔值。<br />例如：10 20 30 40<br /></p>
-            <input type="text" id="dataInput" placeholder="输入数据,使用空格分隔值">
-            <button id="calculateButton" onclick="calStanddeviation()">计算</button>
-
-
-          </div>
-        </td>
-        <td>&nbsp;</td>
+    <p>
+      <input type="text" id="InputavgStdDev" placeholder="输入数据,使用空格分隔值">
+      <button id="calAvgStdDev" onclick="calAvgStdDev()">计算</button>
+    </p>
+    <p>
+    <table>
+      <tr>
+        <td>平均值</td>
+        <td>标准偏差</td>
       </tr>
       <tr>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
         <td>
-          <div id="outputArea">
-            <p>平均值:</p>
-            <p id="avg">等待计算...</p>
-            <p>标准偏差:</p>
-            <p id="stdDeviation">等待计算...</p>
-          </div>
+          <p id="outputAvg">等待计算...</p>
         </td>
-        <td></td>
+        <td>
+          <p id="outputStdDev">等待计算...</p>
+        </td>
       </tr>
-    </tbody>
-  </table>
+    </table>
+
+  </main>
+  <footer>
+    <p>Version:0.0.0.2</p>
+    <a href="https://github.com/BaoZhuhan/CPEhelper">Github Rope</a>
+  </footer>
 </body>
 
 </html>
